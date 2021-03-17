@@ -1,0 +1,515 @@
+/* Start Global CSS */
+.topbanner      
+{   grid-area: topbanner;
+    width: auto;
+    height: 205px;
+    padding: 0px;
+    text-align: center;
+    background-color: #000000;
+    resize: both;
+    min-width: 800px;
+}
+
+
+.menu a
+{   position: relative;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+	font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+	border-radius: 30px;
+	
+}
+.footer {
+    height: 75px;
+    min-width: 100%;
+}
+
+.menu
+{	
+    padding-top:35px;
+}
+
+#logolink
+{
+    height: 100px;
+    width: 100px;
+}
+
+#logo
+{
+	position:relative;
+	top:20px;
+}
+
+
+body
+{
+    margin: auto;
+    resize: both;
+}
+
+.menu a:hover
+{
+    color: #000000;
+    background-color: #f2eeeb;
+}
+
+.menu a.active
+{
+    color: #000000;
+    background-color: #f2eeeb;
+}
+
+footer
+{
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    float: right;
+    height: 75px;
+    bottom: 0px;
+    min-width: 100%;
+}
+footer h3 {
+    background-color: #ffffff;
+}
+
+
+
+/* End Global CSS */
+
+/* Start of CSS for About Page */
+.grid-container
+{	
+	display: grid;
+	grid-template-rows: 1fr 400px 5px 550px 5px;
+	grid-template-columns: 10% 1fr 1fr 10%;
+	grid-template-areas: 
+		"topbanner topbanner topbanner topbanner"
+		"left topleft topright right"
+		"left middle middle right"
+		"left bottomleft bottomright right"
+		"bottomline bottomline bottomline bottomline";
+}
+
+.left { 
+grid-area: left;
+background-color: grey;
+}
+
+.right { grid-area: right;
+background-color: grey;
+}
+
+.topleft { 
+	grid-area: topleft; 
+	text-align: justify;
+	padding-left: 70px;
+	padding-top: 30px
+	
+}
+
+.topright {
+	grid-area: topright;
+	text-align: center;
+	padding-left:70px;
+}
+
+.middle {
+	grid-area: middle;
+	background-color: black;
+}
+
+.bottomleft { 
+	grid-area: bottomleft;
+	text-align: center;
+	padding-right:50px;
+}
+
+
+.bottomright { 
+	grid-area: bottomright;
+}
+
+.bottomright p {
+    text-align: justify;
+    padding-right:50px;
+}
+
+.bottomline {
+	grid-area: bottomline;
+    background-color: black;
+}
+
+.grid-container p {
+    background-color: #ffffff;
+    font-size:20px;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    line-height: 1.5; 
+}
+
+.grid-container h1 {
+    background-color: #ffffff;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+}
+
+.grid-container h3 {
+    background-color: #ffffff;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+}
+
+/*About page button*/
+.button2 {
+	text-align: center;
+	left:100px;
+	top: -25px;
+    margin: 15px;
+}
+/* End of CSS for About Page */
+
+
+/* Start of CSS for Home Page */
+.container, .container2 {
+	background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    border: 3px solid #f1f1f1;
+    z-index: 1;
+    width: 80%;
+    margin-left: 10%;
+    padding: 20px;
+    text-align: center;
+    min-width: 800px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.container2 {
+    margin-bottom: 40px;
+}
+
+.container h1, .container2 h1 {
+	text-align: center;
+}
+
+.button {
+	color: #000000;
+	background-color: #d4d4d4;
+	border: solid 2px #000000;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	align-content: center;
+	border-radius: 30px;
+	font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+	
+}
+
+.button:hover {
+	color: #ffffff;
+	background-color: #000000;
+}
+/*Homepage button*/
+.button1 {
+	text-align: center;
+}	
+
+
+.background {
+ 	position: absolute;
+	background-image: url(../images/woodpile.png);
+    background-size: cover;
+	height: auto;
+}
+
+/* End CSS for Home page */
+
+/* Start of CSS for Join Us page */
+#ImpInfo {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.99); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    border: 3px solid #f1f1f1;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    padding: 20px;
+    text-align: center;
+    min-width: 770px;
+}
+
+#Enroll {
+    float: left;
+    width: 50%;
+    height: 680px;
+    margin-top: 0px;
+    text-align: center;
+    color: #F2F3F4;
+    background-color: #107896;
+    padding: 10px;
+}
+
+#joinbod {
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    background-color: #b0abab;
+    margin-bottom: 0px;
+}
+
+#joinmain {
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+    padding: 15px;
+    padding-top: 0px;
+    min-width: 800px;
+}
+
+.joinbuttons {
+    color: #EFD469;
+    height: 40px;
+    width: 285px;
+    padding: 7px;
+    font-weight: bold;
+    background-color: #093145; 
+    border: 3px solid #087ccf;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.joinbuttons:hover {
+    color: #000000;
+    background-color: #f2eeeb;
+}
+
+#notice {
+    width: 96%;
+    margin-left: 1.3%;
+    border: 4px solid #000000;
+    text-emphasis: filled red;
+    color: #d9d9d9;
+    background-color: #f22929;
+    text-decoration: solid #000000;
+    margin-top: 0px;
+}
+
+#noticehead {
+    width: 96%;
+    margin-left: 1.3%;
+    border: 4px solid #000000;
+    border-bottom: 0px solid;
+    font-weight: Bold;
+    color: #d9d9d9;
+    background-color: #f22929;
+    margin-bottom: 0px;
+}
+
+#signup {
+    background-image: url(../images/signup.png);
+    background-size: cover;
+    width: 50%;
+    height: 680px;
+    position: relative;
+    float: right;
+    
+}
+
+#aboutuslink {
+    color: #F2F3F4;
+}
+
+#address {
+    font-size: 20px;
+}
+/* End CSS for Join Us page */
+
+
+/* Start of CSS for Conact page */
+.contactus {
+    overflow: hidden;
+    height: 700px;
+    margin: 0;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Position text in the middle of the page/image */
+.blurred-img-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.85); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    border: 3px solid #f1f1f1;
+    z-index: 1;
+    width: 80%;
+    margin-left: 10%;
+    padding: 20px;
+    text-align: center;
+    transform: translate(0%, -160%);
+    
+}
+
+#contactbackground {
+    filter: blur(8px);
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+/* Phone links */
+.tel { /*for small screens */
+    color: #fff;
+    padding:1em;
+    text-decoration:none;
+}
+.tel:visited {
+    color: #6970ff;
+}
+.tel:hover {
+    color: #6970ff;
+}
+
+@media screen and (min-width: 28.5em) { /* for larger screens */
+.tel {
+    color: #fff;
+    background:none;
+    cursor:default;
+}
+    
+.tel:visited {
+    color: #6970ff;
+}
+    
+
+    
+    /* Modal test */
+    
+#emailus {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.85); /* Black w/opacity/see-through */
+    color: white;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    border: 3px solid #f1f1f1;
+    z-index: 1;
+    transform: translate(0%, -350%);
+    width: 80%;
+    margin-left: 10%;
+    padding: 18px;
+    text-align: center;
+}
+    
+#myBtn {
+    color: #000000;
+	background-color: #d4d4d4;
+	border: solid 2px #000000;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	align-content: center;
+	border-radius: 30px;
+	font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+}
+    
+#myBtn:hover {
+    color: #000000;
+	background-color: #ffffff;
+}
+    
+    /* The Modal (background) */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.99); /* Black w/opacity/see-through */
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid #f1f1f1;
+    height: 90%;
+    width: 70%;
+}
+
+.modal-content h1{
+    font-size: 40px;
+    border: 4px solid #000000;
+    text-emphasis: filled red;
+    color: #d9d9d9;
+    background-color: #f22929;
+    text-decoration: solid #000000;
+}    
+    
+.modal-content p{
+      font-size: 20px;  
+}
+
+#sendemail {
+    color: #000000;
+	background-color: #d4d4d4;
+	border: solid 2px #000000;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	align-content: center;
+	border-radius: 30px;
+	font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    }
+    
+    
+#sendemail:hover {
+    background-color: #ffffff;
+}
+    
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: #8c8b8b;
+  text-decoration: none;
+  cursor: pointer;
+}
